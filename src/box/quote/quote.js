@@ -3,11 +3,12 @@ import Quotetext from "./quotetext";
 import Quoteauthor from "./quoteauthor";
 
 class Quote extends Component {
+
     render(){
       return (
        <div>
-           <Quotetext />
-           <Quoteauthor />
+           <Quotetext text={this.props.displayQuote.quote} />
+           <Quoteauthor author={this.props.displayQuote.author} />
        </div>
       );
     }
