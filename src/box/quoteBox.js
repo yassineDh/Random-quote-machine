@@ -42,7 +42,7 @@ class Box extends Component {
                <Quote className="mx-auto" displayQuote ={this.state.currentQuote}/>
               </div>
             </div>
-            <div className="col p-3">
+            <div className="col">
               <div>
                 <Quotebuttons newOne={this.changeQuote} />
               </div>
