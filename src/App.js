@@ -1,6 +1,7 @@
 import React ,{Component} from 'react';
 import Box from './box/quoteBox.js';
-import './App.css';
+import './App.scss';
+
 
 class App extends Component {
   render(){
