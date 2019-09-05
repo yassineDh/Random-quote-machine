@@ -38,12 +38,12 @@ class Box extends Component {
         <div className="card" id="shape">
           <div className="card-body">
             <div className="row">
-              <div className = "col p-3">
+              <div className = "col p-4">
                <Quote className="mx-auto" displayQuote ={this.state.currentQuote}/>
               </div>
             </div>
             <div className="col p-3">
-              <div className="row">
+              <div>
                 <Quotebuttons newOne={this.changeQuote} />
               </div>
             </div>
