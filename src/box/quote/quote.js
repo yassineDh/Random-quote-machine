@@ -1,6 +1,7 @@
 import React ,{Component} from 'react';
 import Quotetext from "./quotetext";
 import Quoteauthor from "./quoteauthor";
+import "./quote.scss";
 
 class Quote extends Component {
 
