@@ -20,7 +20,7 @@ class Box extends Component {
   
   changeQuote(){
     let len = this.state.allquotes.quotes.length;
-    let num = Math.floor((Math.random() * len) + 1);
+    let num = Math.floor((Math.random() * len));
     let newQuote = this.state.allquotes.quotes[num];
     var letters = '0123456789ABCDEF';
 	  var colory = '#';
@@ -30,25 +30,37 @@ class Box extends Component {
     variables.testColor = colory;
     this.setState({
       currentQuote: newQuote,
+      color: colory
     })
-  }
 
+    console.log(this.state.color);   
+  }
+   
     render(){
       return (
-        <div className="card" id="shape">
-          <div className="card-body">
-            <div className="row">
-              <div className = "col p-4">
-               <Quote className="mx-auto" displayQuote ={this.state.currentQuote}/>
-              </div>
-            </div>
-            <div className="col">
-              <div>
-                <Quotebuttons newOne={this.changeQuote} />
+        <div className="App">
+          <div className="container-fluid" style={{backgroundColor:this.state.color}}>
+            <div className="row h-100 justify-content-center align-items-center">
+              <div className="col-*-12"> 
+                <div className="card" id="shape">
+                  <div className="card-body">
+                    <div className="row">
+                      <div className = "col p-4">
+                        <Quote className="mx-auto" test={this.state.color} displayQuote ={this.state.currentQuote}/>
+                      </div>
+                    </div>
+                    <div className="col">
+                      <div>
+                        <Quotebuttons newOne={this.changeQuote} test={this.state.color} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        
       );
     }
   }

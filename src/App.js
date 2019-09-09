@@ -4,17 +4,23 @@ import './App.scss';
 
 
 class App extends Component {
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     color: "#111111"
+  //   };}
+
+  // handleChange(){
+  //   this.setState(
+  //     {}
+  //   )
+  // }
+
   render(){
     return (
-      <div className="App">
-        <div className="container-fluid">
-          <div className="row h-100 justify-content-center align-items-center">
-            <div className="col-*-12"> 
-             <Box />
-            </div>
-          </div>
-        </div>
-      </div>
+    <div>
+      <Box />
+    </div>
     );
   }
 }

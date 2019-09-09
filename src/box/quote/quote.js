@@ -8,8 +8,8 @@ class Quote extends Component {
     render(){
       return (
        <div>
-           <Quotetext text={this.props.displayQuote.quote} />
-           <Quoteauthor author={this.props.displayQuote.author} />
+           <Quotetext text={this.props.displayQuote.quote} test={this.props.test} />
+           <Quoteauthor author={this.props.displayQuote.author} test={this.props.test} />
        </div>
       );
     }
