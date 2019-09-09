@@ -5,11 +5,12 @@ import "./quote.scss";
 
 class Quote extends Component {
 
+    
     render(){
       return (
        <div>
-           <Quotetext text={this.props.displayQuote.quote} test={this.props.test} />
-           <Quoteauthor author={this.props.displayQuote.author} test={this.props.test} />
+           <Quotetext text={this.props.displayQuote.quote} test={this.props.test}  fade={this.props.fade} />
+           <Quoteauthor author={this.props.displayQuote.author} test={this.props.test} fade={this.props.fade} />
        </div>
       );
     }
