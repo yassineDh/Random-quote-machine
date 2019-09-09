@@ -36,6 +36,10 @@ class Box extends Component {
     console.log(this.state.color);   
   }
    
+    componentDidMount(){
+      this.changeQuote()
+    }
+
     render(){
       return (
         <div className="App">
