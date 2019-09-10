@@ -64,7 +64,7 @@ class Box extends Component {
 
     render(){
       return (
-        <div className="App">
+        <div className="App" id="quote-box">
           <div className="container-fluid" style={{backgroundColor:this.state.color,transition:'all 0.7s linear'}}>
             <div className="row h-100 justify-content-center align-items-center">
               <div className="col-*-12"> 
