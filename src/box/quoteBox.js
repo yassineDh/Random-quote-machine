@@ -65,7 +65,7 @@ class Box extends Component {
     render(){
       return (
         <div className="App">
-          <div className="container-fluid" style={{backgroundColor:this.state.color,transition:'all 1s linear'}}>
+          <div className="container-fluid" style={{backgroundColor:this.state.color,transition:'all 0.7s linear'}}>
             <div className="row h-100 justify-content-center align-items-center">
               <div className="col-*-12"> 
                 <div className="card" id="shape">
@@ -77,7 +77,7 @@ class Box extends Component {
                     </div>
                     <div className="col">
                       <div>
-                        <Quotebuttons newOne={this.changeQuote} test={this.state.color} />
+                        <Quotebuttons newOne={this.changeQuote} test={this.state.color} quote={this.state.currentQuote} />
                       </div>
                     </div>
                   </div>
