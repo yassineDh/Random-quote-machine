@@ -18,3 +18,4 @@ class Quotetext extends Component {
   }
   
  export default Quotetext;
+ 
